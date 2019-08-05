@@ -50,6 +50,13 @@ describe('app router test suite', () => {
         status: 200,
       },
       {
+        name: '/ssns?count=7',
+        type: 'array',
+        count: 7,
+        headers: ['x-mock-api', 'x-mock-count'],
+        status: 200,
+      },
+      {
         name: '/uuid',
         type: 'string',
         headers: ['x-mock-api'],
@@ -59,6 +66,13 @@ describe('app router test suite', () => {
         name: '/vins',
         type: 'array',
         count: 3,
+        headers: ['x-mock-api', 'x-mock-count'],
+        status: 200,
+      },
+      {
+        name: '/vins?count=12',
+        type: 'array',
+        count: 12,
         headers: ['x-mock-api', 'x-mock-count'],
         status: 200,
       },
@@ -89,11 +103,37 @@ describe('app router test suite', () => {
         status: 200,
       },
       {
-        name: '/image/3?thumb=true',
+        name: '/image/42',
+        type: 'object',
+        props: ['message'],
+        status: 404,
+      },
+      {
+        name: '/chen/1',
         status: 200,
       },
       {
-        name: '/image/42',
+        name: '/chen/1?thumb=true',
+        status: 200,
+      },
+      {
+        name: '/chen/20',
+        status: 200,
+      },
+      {
+        name: '/chen/20?thumb=true',
+        status: 200,
+      },
+      {
+        name: '/chen/28',
+        status: 200,
+      },
+      {
+        name: '/chen/28?thumb=true',
+        status: 200,
+      },
+      {
+        name: '/chen/42',
         type: 'object',
         props: ['message'],
         status: 404,

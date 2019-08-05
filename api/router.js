@@ -28,6 +28,15 @@ const createRouter = express => {
     api.imageGet({ imageNumber, thumb, callback })
   })
 
+  router.get('/chen/:imageNumber', (req, res) => {
+    const { imageNumber } = req.params
+    const { thumb } = req.query
+    const callback = data => {
+      utils.respondBuffer(res, data)
+    }
+    api.chenGet({ imageNumber, thumb, callback })
+  })
+
   router.get('/slug', (req, res) => {
     const count = req.query.count
     utils.respondTo(res, api.slugGet(count))
@@ -44,7 +53,7 @@ const createRouter = express => {
   })
 
   router.get('/vins', (req, res) => {
-    var count = req.query.count || 3
+    var count = req.query.count
     utils.respondTo(res, api.vinsGet(count))
   })
 

@@ -1,12 +1,5 @@
 // api/utils.js
 
-const Chance = require('chance')
-const chance = new Chance()
-
-const delay = () => {
-  return chance.integer({ min: 500, max: 3500 })
-}
-
 const respondBuffer = (res, mock) => {
   const { status, header, data } = mock
   const keys = Object.keys(header)
@@ -28,7 +21,6 @@ const respondTo = (res, mock) => {
 }
 
 module.exports = {
-  delay,
   respondBuffer,
   respondTo,
 }

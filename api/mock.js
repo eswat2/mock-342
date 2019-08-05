@@ -27,11 +27,11 @@ const bufferToStream = binary => {
   return readableStream
 }
 
-const generatePreview = ({ num, thumb, callback }) => {
-  const id = imageIds[num - 1]
-  const input = process.cwd() + `/public/speedhunters/chen-${id}.jpg`
+const generatePreview = ({ id, num, thumb, callback }) => {
+  const xid = id ? (id <= 28 ? id : undefined) : imageIds[num - 1]
+  const input = process.cwd() + `/public/speedhunters/chen-${xid}.jpg`
 
-  if (id) {
+  if (xid) {
     if (thumb) {
       sharp(input)
         .resize(150, 150, { fit: 'inside' })
@@ -61,6 +61,32 @@ const globGet = () => {
       imageMax,
     },
   }
+}
+
+const chenGet = ({ imageNumber, thumb, callback }) => {
+  const num = imageNumber
+  const id = num > 9 ? `0${num}` : `00${num}`
+  const processData = data => {
+    if (data) {
+      const src = bufferToStream(data)
+      callback({
+        status: 200,
+        header: {
+          'X-Image-Number': num,
+          'X-Max-Image-Count': 28,
+          'Content-Type': 'image/jpeg',
+        },
+        data: src,
+      })
+    } else {
+      callback({
+        status: 404,
+        header: {},
+        data: { message: 'image unavailable' },
+      })
+    }
+  }
+  generatePreview({ id, thumb, callback: processData })
 }
 
 const imageGet = ({ imageNumber, thumb, callback }) => {
@@ -127,6 +153,7 @@ const vinsGet = (count = 3) => {
 }
 
 const api = {
+  chenGet,
   imageGet,
   globGet,
   slugGet,

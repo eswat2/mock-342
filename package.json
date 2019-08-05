@@ -31,7 +31,8 @@
     "dev": "nodemon server",
     "test": "mocha",
     "ct": "mocha --watch",
-    "coverage": "nyc mocha"
+    "coverage": "nyc mocha",
+    "deploy": "git push heroku master"
   },
   "devDependencies": {
     "chai": "4.2.0",

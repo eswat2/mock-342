@@ -10,7 +10,6 @@ const express = require('express') // call express
 const app = express() // define our app using express
 const bodyParser = require('body-parser')
 const NodeCache = require('node-cache')
-const utils = require('./api/utils')
 const api = require('./api/router')
 
 // NOTE:  data is purged after 5 minutes...
@@ -25,8 +24,7 @@ app.use(express.static('public'))
 
 // simulate delay response
 app.use((req, res, next) => {
-  const delay = 1 // req.path.includes('api/image') ? 1 : utils.delay()
-  setTimeout(() => next(), delay)
+  setTimeout(() => next(), 1)
 })
 
 // configure app to use CORS
