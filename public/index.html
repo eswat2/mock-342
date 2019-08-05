@@ -1,0 +1,150 @@
+<html>
+  <head>
+    <style>
+      /* NOTE: colors from clrs.cc - A nicer color palette for the web...
+ */
+      :root {
+        --clrs-navy: #001f3f;
+        --clrs-blue: #0074d9;
+        --clrs-aqua: #7fdbff;
+        --clrs-teal: #39cccc;
+        --clrs-olive: #3d9970;
+        --clrs-green: #2ecc40;
+        --clrs-lime: #01ff70;
+        --clrs-yellow: #ffdc00;
+        --clrs-orange: #ff851b;
+        --clrs-red: #ff4136;
+        --clrs-maroon: #85144b;
+        --clrs-fuchsia: #f012be;
+        --clrs-purple: #b10dc9;
+        --clrs-black: #111111;
+        --clrs-gray: #aaaaaa;
+        --clrs-silver: #dddddd;
+      }
+
+      body {
+        -webkit-animation: pulsate 100s linear infinite;
+        animation: pulsate 100s linear infinite;
+        margin: 40px;
+        font-size: 48px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+          'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+          'Helvetica Neue', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      code {
+        font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+          monospace;
+      }
+
+      sup {
+        margin-left: 5px;
+        font-size: 24px;
+      }
+
+      svg {
+        width: 40vw;
+        height: 40vw;
+        fill: var(--clrs-silver);
+      }
+
+      footer {
+        position: absolute;
+        bottom: 40px;
+        font-size: 12px;
+        font-style: italic;
+      }
+
+      /* NOTE: animation from clrs.cc - A nicer color palette for the web...
+ */
+      @keyframes pulsate {
+        0% {
+          color: #333;
+          background: #fff;
+        }
+        7% {
+          color: #0c85ff;
+          background: #001f3f;
+        }
+        14% {
+          color: #40a9ff;
+          background: #0074d9;
+        }
+        21% {
+          color: #00a8e5;
+          background: #7fdbff;
+        }
+        28% {
+          color: #165656;
+          background: #39cccc;
+        }
+        35% {
+          color: #112c20;
+          background: #3d9970;
+        }
+        42% {
+          color: #124f18;
+          background: #2ecc40;
+        }
+        49% {
+          color: #00672d;
+          background: #01ff70;
+        }
+        56% {
+          color: #665700;
+          background: #ffdc00;
+        }
+        63% {
+          color: #ffd6b4;
+          background: #ff851b;
+        }
+        70% {
+          color: #ffd1cf;
+          background: #ff4136;
+        }
+        77% {
+          color: #e44e99;
+          background: #85144b;
+        }
+        84% {
+          color: #f9a2e6;
+          background: #f012be;
+        }
+        91% {
+          color: #e679f6;
+          background: #b10dc9;
+        }
+        95% {
+          color: #5e5e5e;
+          background: #111;
+        }
+        96% {
+          color: #919191;
+          background: #ddd;
+        }
+        98% {
+          color: #5d5d5d;
+          background: #aaa;
+        }
+        100% {
+          color: #b3b3b3;
+          background: #fff;
+        }
+      }
+    </style>
+    <script src="https://kit.fontawesome.com/41c1d43393.js"></script>
+  </head>
+  <body>
+    <strong>
+      mock-342
+      <sup>
+        <i class="fas fa-angle-double-up"></i>
+      </sup>
+    </strong>
+    <footer>
+      <i class="fas fa-asterisk"></i> colors & animation created by clrs.cc
+    </footer>
+  </body>
+</html>

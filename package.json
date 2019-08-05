@@ -1,0 +1,43 @@
+{
+  "name": "mock-342",
+  "version": "0.0.2",
+  "description": "secret",
+  "homepage": "https://eswat2.github.io/mock-342",
+  "private": true,
+  "main": "server.js",
+  "engineStrict": true,
+  "engines": {
+    "node": "11.15.0",
+    "npm": "6.9.0",
+    "yarn": "1.17.3"
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "semi": false,
+    "singleQuote": true
+  },
+  "dependencies": {
+    "axios": "0.19.0",
+    "chance": "1.0.18",
+    "express": "4.17.1",
+    "faker": "4.1.0",
+    "node-cache": "4.2.1",
+    "sharp": "0.23.0",
+    "vin-generator": "1.0.1"
+  },
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server",
+    "test": "mocha",
+    "ct": "mocha --watch",
+    "coverage": "nyc mocha"
+  },
+  "devDependencies": {
+    "chai": "4.2.0",
+    "chai-http": "4.3.0",
+    "mocha": "6.2.0",
+    "nyc": "14.1.1",
+    "sinon": "7.4.0"
+  }
+}
