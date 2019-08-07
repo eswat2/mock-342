@@ -8,8 +8,7 @@
   "engineStrict": true,
   "engines": {
     "node": "11.15.0",
-    "npm": "6.9.0",
-    "yarn": "1.17.3"
+    "npm": "6.9.0"
   },
   "prettier": {
     "trailingComma": "es5",
