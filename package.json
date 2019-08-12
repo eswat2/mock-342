@@ -31,7 +31,8 @@
     "test": "mocha",
     "ct": "mocha --watch",
     "coverage": "nyc mocha",
-    "deploy": "git push heroku master"
+    "deploy": "git push heroku master",
+    "redeploy": "git commit --allow-empty -m 'Trigger Heroku deploy'; yarn deploy"
   },
   "devDependencies": {
     "chai": "4.2.0",
