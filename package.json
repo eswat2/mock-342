@@ -5,11 +5,6 @@
   "homepage": "https://eswat2.github.io/mock-342",
   "private": true,
   "main": "server.js",
-  "engineStrict": true,
-  "engines": {
-    "node": "12.13.0",
-    "npm": "6.12.0"
-  },
   "prettier": {
     "trailingComma": "es5",
     "tabWidth": 2,
