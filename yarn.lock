@@ -248,9 +248,9 @@
   integrity sha512-t73xJJrvdTjXrn4jLS9VSGRbz0nUY3cl2DMGDU48lKl+HR9dbbjW2A9r3g40VA++mQpy6uuHg33gy7du2BKpog==
 
 "@types/node@*":
-  version "15.6.0"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-15.6.0.tgz#f0ddca5a61e52627c9dcb771a6039d44694597bc"
-  integrity sha512-gCYSfQpy+LYhOFTKAeE8BkyGqaxmlFxe+n4DKM6DR0wzw/HISUE/hAmkC/KT8Sw5PCJblqg062b3z9gucv3k0A==
+  version "15.6.1"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-15.6.1.tgz#32d43390d5c62c5b6ec486a9bc9c59544de39a08"
+  integrity sha512-7EIraBEyRHEe7CH+Fm1XvgqU6uwZN8Q7jppJGcqjROMT29qhAuuOxYB1uEY5UMYQKEmA5D+5tBnhdaPXSsLONA==
 
 "@types/superagent@^3.8.3":
   version "3.8.7"
@@ -817,9 +817,9 @@ ee-first@1.1.1:
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
 electron-to-chromium@^1.3.723:
-  version "1.3.736"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.736.tgz#f632d900a1f788dab22fec9c62ec5c9c8f0c4052"
-  integrity sha512-DY8dA7gR51MSo66DqitEQoUMQ0Z+A2DSXFi7tK304bdTVqczCAfUuyQw6Wdg8hIoo5zIxkU1L24RQtUce1Ioig==
+  version "1.3.738"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.738.tgz#aec24b091c82acbfabbdcce08076a703941d17ca"
+  integrity sha512-vCMf4gDOpEylPSLPLSwAEsz+R3ShP02Y3cAKMZvTqule3XcPp7tgc/0ESI7IS6ZeyBlGClE50N53fIOkcIVnpw==
 
 emoji-regex@^8.0.0:
   version "8.0.0"
@@ -1608,10 +1608,10 @@ negotiator@0.6.2:
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.2.tgz#feacf7ccf525a77ae9634436a64883ffeca346fb"
   integrity sha512-hZXc7K2e+PgeI1eDBe/10Ard4ekbfrrqG8Ep+8Jmf4JID2bNg7NvCPOZN+kfF574pFQI7mum2AUqDidoKqcTOw==
 
-nise@^5.0.4:
-  version "5.0.4"
-  resolved "https://registry.yarnpkg.com/nise/-/nise-5.0.4.tgz#aafddeec51d8bcb9842a51be8d82d0b9f289b002"
-  integrity sha512-ZcFPFu5a7xiaoR/ieYXMx6B/QLJej9upgxcpD9uB2Oz4JbZUtAc9+Z000W6910tZuVvaHozEoxq0KvVE9Bj2TQ==
+nise@^5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/nise/-/nise-5.1.0.tgz#713ef3ed138252daef20ec035ab62b7a28be645c"
+  integrity sha512-W5WlHu+wvo3PaKLsJJkgPup2LrsXCcm7AWwyNZkUnn5rwPkuPBi3Iwk5SQtN0mv+K65k7nKKjwNQ30wg3wLAQQ==
   dependencies:
     "@sinonjs/commons" "^1.7.0"
     "@sinonjs/fake-timers" "^7.0.4"
@@ -1620,9 +1620,9 @@ nise@^5.0.4:
     path-to-regexp "^1.7.0"
 
 node-abi@^2.21.0:
-  version "2.26.0"
-  resolved "https://registry.yarnpkg.com/node-abi/-/node-abi-2.26.0.tgz#355d5d4bc603e856f74197adbf3f5117a396ba40"
-  integrity sha512-ag/Vos/mXXpWLLAYWsAoQdgS+gW7IwvgMLOgqopm/DbzAjazLltzgzpVMsFlgmo9TzG5hGXeaBZx2AI731RIsQ==
+  version "2.28.0"
+  resolved "https://registry.yarnpkg.com/node-abi/-/node-abi-2.28.0.tgz#bd7995b5d06efd247c86229f2c2eb0ca56af8ec8"
+  integrity sha512-81mGpZh1sdNcp2mRNYOuOx9AZ8iTtaWptMETxHVCo/bDXKFZmjhJ67nmwG6OmKHWrjILOaGqJScIvBrzcjwYeg==
   dependencies:
     semver "^5.4.1"
 
@@ -2120,16 +2120,16 @@ simple-swizzle@^0.2.2:
   dependencies:
     is-arrayish "^0.3.1"
 
-sinon@11.0.0:
-  version "11.0.0"
-  resolved "https://registry.yarnpkg.com/sinon/-/sinon-11.0.0.tgz#e45bae910425d3e52f7eebcb34b47ad42cc7eb57"
-  integrity sha512-iLdNOhEDVHf1GJwWIqiFQe7QqYsqKDSYUUmmb180WCu3l0Cz+CKBxsiSa8P5fTJvTp1lwE77uK/aHzUuJKr1cA==
+sinon@11.1.0:
+  version "11.1.0"
+  resolved "https://registry.yarnpkg.com/sinon/-/sinon-11.1.0.tgz#e8aa528ffb964d98a588b5f3b81a27720b6e3ed3"
+  integrity sha512-wCbMjy6pepGX3CE/IBz3QDqOmdYP96tWrrqTMVnbREgJG989725EbMZD9vp+Cd+A6MNXDjb7weWLi/bPPpcH/g==
   dependencies:
     "@sinonjs/commons" "^1.8.3"
     "@sinonjs/fake-timers" "^7.1.0"
     "@sinonjs/samsam" "^6.0.2"
     diff "^5.0.0"
-    nise "^5.0.4"
+    nise "^5.1.0"
     supports-color "^8.1.1"
 
 source-map@^0.5.0:
