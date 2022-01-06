@@ -114,7 +114,7 @@ const imageGet = ({ imageNumber, thumb, callback }) => {
 }
 
 const slugGet = (count = 3) => {
-  const data = chance.unique(change.word, count, { length: 5 }).join('-')
+  const data = chance.unique(chance.word, count, { length: 5 }).join('-')
   return {
     status: 200,
     header: { 'x-mock-api': 'slug', 'x-mock-count': count },
