@@ -12,7 +12,7 @@
     "singleQuote": true
   },
   "dependencies": {
-    "axios": "0.25.0",
+    "axios": "0.26.0",
     "chance": "1.1.8",
     "express": "4.17.2",
     "node-cache": "5.1.2",
